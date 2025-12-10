@@ -4,7 +4,7 @@ export default defineConfig({
   name: "tannenliebe-map-backend",
   type: "web-app",
 
-  // Database binding
+  // Qui diciamo a Webflow Cloud che vogliamo un DB
   bindings: {
     DB: {
       type: "database",

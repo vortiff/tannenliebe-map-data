@@ -4,7 +4,7 @@ export default defineConfig({
   name: "tannenliebe-map-backend",
   type: "web-app",
 
-  // Qui diciamo a Webflow Cloud che vogliamo un DB
+  // Declare a SQLite database
   bindings: {
     DB: {
       type: "database",

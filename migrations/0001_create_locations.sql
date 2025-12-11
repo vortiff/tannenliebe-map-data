@@ -5,10 +5,11 @@ CREATE TABLE IF NOT EXISTS locations (
     address TEXT NOT NULL,
     category TEXT,
     place_id TEXT UNIQUE,
-    lat REAL,
-    lng REAL,
+    photo TEXT,
+    latitude REAL,
+    longitude REAL,
     website TEXT,
     rating REAL,
-    hours TEXT,
+    opening_hours TEXT,
     updatedAt TEXT
 );

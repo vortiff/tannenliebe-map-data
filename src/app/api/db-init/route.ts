@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { getWebflowBinding } from "../../webflow-loader";
+import { getWebflowBinding } from "../../../../webflow-loader";
 
 export const runtime = "nodejs";
 

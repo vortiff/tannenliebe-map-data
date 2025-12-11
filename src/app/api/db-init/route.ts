@@ -1,7 +1,8 @@
 import type { NextRequest } from "next/server";
 import getWebflowBinding from "../../../../webflow-loader";
 
-export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 type LocationPayload = {
   name: string;

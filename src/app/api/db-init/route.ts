@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { getWebflowBinding } from "../../../../webflow-loader";
+import getWebflowBinding from "../../../../webflow-loader";
 
 export const runtime = "nodejs";
 
@@ -21,10 +21,10 @@ type BodyPayload = {
   locations: LocationPayload[];
 };
 
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest, context: any) {
   // ✅ CARICA I BINDING (incluso DB)
-  const env = getWebflowBinding(); 
-  const db = env.DB;  // <-- ORA ESISTE DAVVERO!
+  const env = getWebflowBinding(context);
+  const db = env.DB;
 
   let body: BodyPayload;
 

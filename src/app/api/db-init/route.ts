@@ -1,40 +1,48 @@
-import { NextResponse } from "next/server";
+// src/app/api/db-init/route.ts
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+/**
+ * GET /tannenliebe-map/api/db-init
+ * Solo per test: ti dice se la route è viva.
+ */
+export async function GET() {
+  return NextResponse.json(
+    {
+      ok: true,
+      message: "db-init API è online 🚀",
+    },
+    { status: 200 }
+  );
+}
+
+/**
+ * POST /tannenliebe-map/api/db-init
+ * Qui in futuro riceveremo il JSON da Google Sheet e
+ * lo salveremo nel database Webflow Cloud.
+ */
+export async function POST(req: NextRequest) {
   try {
-    // Cloudflare Worker environment
-    // OpenNext exposes env bindings here:
-    // @ts-ignore
-    const env = (globalThis as any).__ENV__;
+    const body = await req.json();
 
-    if (!env || !env.DB) {
-      return NextResponse.json(
-        { error: "D1 database binding 'DB' not found" },
-        { status: 500 }
-      );
-    }
+    // Per ora facciamo solo logging. Più avanti:
+    // - validiamo il payload
+    // - lo salviamo nel DB (D1 + Drizzle)
+    console.log("📥 Payload ricevuto da Google Sheet:", body);
 
-    // Example: Create table if not exists
-    await env.DB.exec(`
-      CREATE TABLE IF NOT EXISTS locations (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT,
-        address TEXT,
-        category TEXT,
-        lat REAL,
-        lng REAL,
-        website TEXT,
-        rating REAL,
-        hours TEXT,
-        photo TEXT
-      );
-    `);
-
-    return NextResponse.json({ success: true });
-  } catch (err: any) {
     return NextResponse.json(
-      { error: err.message || "Unknown error" },
-      { status: 500 }
+      {
+        ok: true,
+        receivedCount: Array.isArray(body?.locations)
+          ? body.locations.length
+          : undefined,
+      },
+      { status: 200 }
+    );
+  } catch (err) {
+    console.error("Errore nel POST /api/db-init:", err);
+    return NextResponse.json(
+      { ok: false, error: "Payload non valido" },
+      { status: 400 }
     );
   }
 }

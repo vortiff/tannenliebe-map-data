@@ -6,7 +6,6 @@
     {
       "binding": "DB",
       "database_name": "tannenliebe-locations",
-      "database_id": "REPLACE_ME",
       "migrations_dir": "./migrations"
     }
   ]

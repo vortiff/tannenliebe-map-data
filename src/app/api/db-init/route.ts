@@ -1,4 +1,5 @@
 import type { NextRequest } from "next/server";
+import { getWebflowBinding } from "webflow-cloud-loader";
 
 export const runtime = "nodejs";
 
@@ -20,27 +21,29 @@ type BodyPayload = {
   locations: LocationPayload[];
 };
 
-export async function POST(req: NextRequest, context: any) {
-  const env = context.env;
+export async function POST(req: NextRequest) {
+  // ✅ CARICA I BINDING (incluso DB)
+  const env = getWebflowBinding(); 
+  const db = env.DB;  // <-- ORA ESISTE DAVVERO!
 
   let body: BodyPayload;
+
   try {
     body = (await req.json()) as BodyPayload;
   } catch (e) {
-    return new Response(
-      JSON.stringify({ ok: false, error: "Invalid JSON body" }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ ok: false, error: "Invalid JSON" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   if (!body.locations || !Array.isArray(body.locations)) {
-    return new Response(
-      JSON.stringify({ ok: false, error: "Missing locations array" }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ ok: false, error: "Missing locations" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
-  const db = env.DB;
   const updatedAt = body.updatedAt ?? new Date().toISOString();
 
   const insertStmt = db.prepare(`
@@ -79,10 +82,9 @@ export async function POST(req: NextRequest, context: any) {
     const latitude = Number(loc.latitude ?? (loc as any).lat) || null;
     const longitude = Number(loc.longitude ?? (loc as any).lng) || null;
 
-    const opening_hours =
-      Array.isArray(loc.opening_hours)
-        ? JSON.stringify(loc.opening_hours)
-        : loc.opening_hours ?? null;
+    const opening_hours = Array.isArray(loc.opening_hours)
+      ? JSON.stringify(loc.opening_hours)
+      : loc.opening_hours ?? null;
 
     try {
       await insertStmt
@@ -102,14 +104,13 @@ export async function POST(req: NextRequest, context: any) {
         .run();
       successCount++;
     } catch (e) {
-      console.error("DB insert error for place_id:", loc.place_id, e);
+      console.error("DB insert error:", e);
     }
   }
 
   return new Response(
     JSON.stringify({
       ok: true,
-      receivedCount: body.locations.length,
       writtenCount: successCount,
     }),
     { status: 200, headers: { "Content-Type": "application/json" } }

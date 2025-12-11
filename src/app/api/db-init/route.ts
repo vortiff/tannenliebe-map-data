@@ -1,7 +1,6 @@
-// src/app/api/db-init/route.ts
 import type { NextRequest } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 type LocationPayload = {
   name: string;
@@ -9,11 +8,11 @@ type LocationPayload = {
   category?: string;
   place_id?: string;
   photo?: string;
-  latitude?: number;
-  longitude?: number;
+  latitude?: number | string;
+  longitude?: number | string;
   website?: string;
-  rating?: number;
-  opening_hours?: string;
+  rating?: number | string;
+  opening_hours?: string | string[];
 };
 
 type BodyPayload = {
@@ -21,9 +20,10 @@ type BodyPayload = {
   locations: LocationPayload[];
 };
 
-export async function POST(req: NextRequest, { env }: any) {
-  let body: BodyPayload;
+export async function POST(req: NextRequest, context: any) {
+  const env = context.env;
 
+  let body: BodyPayload;
   try {
     body = (await req.json()) as BodyPayload;
   } catch (e) {
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest, { env }: any) {
     );
   }
 
-  const db: any = (env as any).DB;
+  const db = env.DB;
   const updatedAt = body.updatedAt ?? new Date().toISOString();
 
   const insertStmt = db.prepare(`
@@ -59,16 +59,16 @@ export async function POST(req: NextRequest, { env }: any) {
     )
     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)
     ON CONFLICT(place_id) DO UPDATE SET
-      name          = excluded.name,
-      address       = excluded.address,
-      category      = excluded.category,
-      photo         = excluded.photo,
-      latitude      = excluded.latitude,
-      longitude     = excluded.longitude,
-      website       = excluded.website,
-      rating        = excluded.rating,
+      name = excluded.name,
+      address = excluded.address,
+      category = excluded.category,
+      photo = excluded.photo,
+      latitude = excluded.latitude,
+      longitude = excluded.longitude,
+      website = excluded.website,
+      rating = excluded.rating,
       opening_hours = excluded.opening_hours,
-      updatedAt     = excluded.updatedAt
+      updatedAt = excluded.updatedAt
   `);
 
   let successCount = 0;
@@ -76,13 +76,13 @@ export async function POST(req: NextRequest, { env }: any) {
   for (const loc of body.locations) {
     if (!loc.name || !loc.address) continue;
 
-    // fallback nel caso in futuro il JSON avesse lat/lng invece che latitude/longitude
-    const latitude =
-      (loc as any).latitude ?? (loc as any).lat ?? null;
-    const longitude =
-      (loc as any).longitude ?? (loc as any).lng ?? null;
+    const latitude = Number(loc.latitude ?? (loc as any).lat) || null;
+    const longitude = Number(loc.longitude ?? (loc as any).lng) || null;
+
     const opening_hours =
-      (loc as any).opening_hours ?? (loc as any).hours ?? null;
+      Array.isArray(loc.opening_hours)
+        ? JSON.stringify(loc.opening_hours)
+        : loc.opening_hours ?? null;
 
     try {
       await insertStmt

@@ -1,9 +1,6 @@
 {
-  "cloud": {
-    "framework": "nextjs",
-    "build": {
-      "command": "npm run build",
-      "output": ".open-next"
-    }
+  "framework": "none",
+  "functions": {
+    "directory": ".wf/functions"
   }
 }

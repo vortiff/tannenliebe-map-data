@@ -1,6 +1,8 @@
 {
-  "framework": "none",
-  "functions": {
-    "directory": ".wf/functions"
+  "cosmic": {
+    "framework": "none",
+    "functions": {
+      "directory": ".wf/functions"
+    }
   }
 }

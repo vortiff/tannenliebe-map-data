@@ -21,7 +21,7 @@ type BodyPayload = {
 };
 
 /**
- * GET – Test
+ * GET — test endpoint
  */
 export async function GET() {
   return NextResponse.json(
@@ -31,9 +31,10 @@ export async function GET() {
 }
 
 /**
- * POST – Inserimento nel database D1
+ * POST — salva nel DB
  */
-export async function POST(req: NextRequest, { env }: any) {
+export async function POST(req: NextRequest, context: any) {
+  const env = context.env; // QUI C'È IL DATABASE BINDING
   let body: BodyPayload;
 
   try {
@@ -52,7 +53,8 @@ export async function POST(req: NextRequest, { env }: any) {
     );
   }
 
-  const db = env.DB as D1Database;
+  // 👇 NON tipizziamo env.DB come D1Database (NON ESISTE in Next.js)
+  const db = env.DB;
   const updatedAt = body.updatedAt ?? new Date().toISOString();
 
   const insert = db.prepare(`

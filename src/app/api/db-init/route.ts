@@ -40,7 +40,7 @@ export async function POST(req: NextRequest, { env }: any) {
     );
   }
 
-  const db = (env as any).DB as D1Database;
+  const db: any = (env as any).DB;
   const updatedAt = body.updatedAt ?? new Date().toISOString();
 
   const insertStmt = db.prepare(`

@@ -1,4 +1,4 @@
-export async function onRequest(context) {
+export async function onRequest(context: any) {
   const db = context.env.DB;
 
   let payload;

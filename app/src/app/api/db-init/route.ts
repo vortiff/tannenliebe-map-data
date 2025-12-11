@@ -1,26 +1,40 @@
-export async function GET(request: Request, { env }) {
+import { NextResponse } from "next/server";
+
+export async function GET(request: Request) {
   try {
-    // Create table if not exists
-    const sql = `
+    // Cloudflare Worker environment
+    // OpenNext exposes env bindings here:
+    // @ts-ignore
+    const env = (globalThis as any).__ENV__;
+
+    if (!env || !env.DB) {
+      return NextResponse.json(
+        { error: "D1 database binding 'DB' not found" },
+        { status: 500 }
+      );
+    }
+
+    // Example: Create table if not exists
+    await env.DB.exec(`
       CREATE TABLE IF NOT EXISTS locations (
-        place_id TEXT PRIMARY KEY,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         address TEXT,
         category TEXT,
-        photo TEXT,
         lat REAL,
         lng REAL,
         website TEXT,
         rating REAL,
         hours TEXT,
-        updated_at TEXT
+        photo TEXT
       );
-    `;
+    `);
 
-    await env.DB.exec(sql);
-
-    return new Response("Database initialized!", { status: 200 });
-  } catch (err) {
-    return new Response("Error: " + String(err), { status: 500 });
+    return NextResponse.json({ success: true });
+  } catch (err: any) {
+    return NextResponse.json(
+      { error: err.message || "Unknown error" },
+      { status: 500 }
+    );
   }
 }

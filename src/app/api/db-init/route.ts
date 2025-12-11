@@ -1,48 +1,117 @@
 // src/app/api/db-init/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-/**
- * GET /tannenliebe-map/api/db-init
- * Solo per test: ti dice se la route è viva.
- */
-export async function GET() {
-  return NextResponse.json(
-    {
-      ok: true,
-      message: "db-init API è online 🚀",
-    },
-    { status: 200 }
-  );
-}
+export const runtime = "edge";
 
-/**
- * POST /tannenliebe-map/api/db-init
- * Qui in futuro riceveremo il JSON da Google Sheet e
- * lo salveremo nel database Webflow Cloud.
- */
-export async function POST(req: NextRequest) {
+type LocationPayload = {
+  name: string;
+  address: string;
+  category?: string;
+  place_id?: string;
+  photo?: string;
+  latitude?: number;
+  longitude?: number;
+  website?: string;
+  rating?: number;
+  opening_hours?: string;
+};
+
+type BodyPayload = {
+  updatedAt?: string;
+  locations: LocationPayload[];
+};
+
+export async function POST(req: NextRequest, { env }: any) {
+  let body: BodyPayload;
+
   try {
-    const body = await req.json();
-
-    // Per ora facciamo solo logging. Più avanti:
-    // - validiamo il payload
-    // - lo salviamo nel DB (D1 + Drizzle)
-    console.log("📥 Payload ricevuto da Google Sheet:", body);
-
-    return NextResponse.json(
-      {
-        ok: true,
-        receivedCount: Array.isArray(body?.locations)
-          ? body.locations.length
-          : undefined,
-      },
-      { status: 200 }
-    );
-  } catch (err) {
-    console.error("Errore nel POST /api/db-init:", err);
-    return NextResponse.json(
-      { ok: false, error: "Payload non valido" },
-      { status: 400 }
+    body = (await req.json()) as BodyPayload;
+  } catch (e) {
+    return new Response(
+      JSON.stringify({ ok: false, error: "Invalid JSON body" }),
+      { status: 400, headers: { "Content-Type": "application/json" } }
     );
   }
+
+  if (!body.locations || !Array.isArray(body.locations)) {
+    return new Response(
+      JSON.stringify({ ok: false, error: "Missing locations array" }),
+      { status: 400, headers: { "Content-Type": "application/json" } }
+    );
+  }
+
+  const db = (env as any).DB as D1Database;
+  const updatedAt = body.updatedAt ?? new Date().toISOString();
+
+  const insertStmt = db.prepare(`
+    INSERT INTO locations (
+      name,
+      address,
+      category,
+      place_id,
+      photo,
+      latitude,
+      longitude,
+      website,
+      rating,
+      opening_hours,
+      updatedAt
+    )
+    VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)
+    ON CONFLICT(place_id) DO UPDATE SET
+      name          = excluded.name,
+      address       = excluded.address,
+      category      = excluded.category,
+      photo         = excluded.photo,
+      latitude      = excluded.latitude,
+      longitude     = excluded.longitude,
+      website       = excluded.website,
+      rating        = excluded.rating,
+      opening_hours = excluded.opening_hours,
+      updatedAt     = excluded.updatedAt
+  `);
+
+  let successCount = 0;
+
+  for (const loc of body.locations) {
+    if (!loc.name || !loc.address) continue;
+
+    // fallback nel caso in futuro il JSON avesse lat/lng invece che latitude/longitude
+    const latitude =
+      (loc as any).latitude ?? (loc as any).lat ?? null;
+    const longitude =
+      (loc as any).longitude ?? (loc as any).lng ?? null;
+    const opening_hours =
+      (loc as any).opening_hours ?? (loc as any).hours ?? null;
+
+    try {
+      await insertStmt
+        .bind(
+          loc.name,
+          loc.address,
+          loc.category ?? null,
+          loc.place_id ?? null,
+          loc.photo ?? null,
+          latitude,
+          longitude,
+          loc.website ?? null,
+          loc.rating ?? null,
+          opening_hours,
+          updatedAt
+        )
+        .run();
+      successCount++;
+    } catch (e) {
+      console.error("DB insert error for place_id:", loc.place_id, e);
+    }
+  }
+
+  return new Response(
+    JSON.stringify({
+      ok: true,
+      receivedCount: body.locations.length,
+      writtenCount: successCount,
+    }),
+    { status: 200, headers: { "Content-Type": "application/json" } }
+  );
 }

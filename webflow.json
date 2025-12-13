@@ -1,8 +1,6 @@
 {
   "cosmic": {
-    "framework": {
-      "name": "custom"
-    },
+    "framework": "webflow",
     "functions": {
       "directory": ".wf/functions"
     }

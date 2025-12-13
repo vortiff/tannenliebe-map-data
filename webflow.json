@@ -1,0 +1,10 @@
+{
+  "cosmic": {
+    "framework": {
+      "name": "webflow"
+    },
+    "functions": {
+      "directory": ".wf/functions"
+    }
+  }
+}

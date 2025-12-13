@@ -1,6 +1,8 @@
 {
   "cosmic": {
-    "framework": "custom",
+    "framework": {
+      "name": "custom"
+    },
     "functions": {
       "directory": ".wf/functions"
     }

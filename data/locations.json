@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2025-12-17T08:56:02.394Z",
-  "count": 224,
+  "updatedAt": "2026-01-08T10:28:14.720Z",
+  "count": 223,
   "locations": [
     {
       "name": "name",
@@ -2677,18 +2677,6 @@
       "website": "https://www.getraenke-unikate.de/",
       "rating": 5,
       "opening_hours": "Monday: 9:00 AM – 12:30 PM, 2:00 – 6:30 PM; Tuesday: 9:00 AM – 12:30 PM, 2:00 – 6:30 PM; Wednesday: 9:00 AM – 12:30 PM, 2:00 – 6:30 PM; Thursday: 9:00 AM – 12:30 PM, 2:00 – 6:30 PM; Friday: 9:00 AM – 12:30 PM, 2:00 – 6:30 PM; Saturday: 8:30 AM – 2:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "https://developers.google.com/maps/documentation/places/web-service/place-id?hl=de",
-      "address": "",
-      "category": "",
-      "place_id": "",
-      "photo": "",
-      "latitude": "",
-      "longitude": "",
-      "website": "",
-      "rating": "",
-      "opening_hours": ""
     }
   ]
 }

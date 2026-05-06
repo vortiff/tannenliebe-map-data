@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T00:30:14.728Z",
+  "updatedAt": "2026-05-06T12:35:15.208Z",
   "count": 185,
   "locations": [
     {
@@ -435,18 +435,6 @@
       "opening_hours": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours"
     },
     {
-      "name": "Biomarkt Löwenzahn GmbH",
-      "address": "Bundesstraße 1, 79379 Müllheim, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJRzqHy0inkUcRqjZwdk7w5dA",
-      "photo": "https://places.googleapis.com/v1/places/ChIJRzqHy0inkUcRqjZwdk7w5dA/photos/Ab43m-uzSYTDY3QMqJ_OE2-TZAmqCdq_vuaoqv6KnfWvIXW3KeElXf29cRDOc-32TqSnj8O82OFmHDyLrI3MDYP-dWD3AAX7N0D3tkX-v4y-sqftFL8u3dhTOyVdg85RhaVxQl8XPeNPB5JcKQqQhvvKEbNRry-sGhERMMCVa59UXHiq_WQVvAThPUZs9Sk7QKNzyT-y7s6xGl9RRyPH8XeUsOUhcmgBQGuwgIND8ljDsf4n2fo3o2ZJPsWC6TrZjN_kM9vJ70soWV65WGDJCFkjBHS41NY9X-fKwGRWRFPKJHXaTw/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 47.8132786,
-      "longitude": 7.6101549,
-      "website": "https://www.loewenzahn-muellheim.de/",
-      "rating": 4.5,
-      "opening_hours": "Monday: 8:00 AM – 8:00 PM; Tuesday: 8:00 AM – 8:00 PM; Wednesday: 8:00 AM – 8:00 PM; Thursday: 8:00 AM – 8:00 PM; Friday: 8:00 AM – 8:00 PM; Saturday: 8:00 AM – 6:00 PM; Sunday: Closed"
-    },
-    {
       "name": "Rothaus Breisach · Coffee & Bakery · organic market",
       "address": "Landhof Rothaus 3, 79206 Breisach am Rhein, Deutschland",
       "category": "Einzelhandel",
@@ -553,42 +541,6 @@
       "website": "https://www.lahrbio.de/",
       "rating": 4.5,
       "opening_hours": "Monday: 9:00 AM – 6:30 PM; Tuesday: 9:00 AM – 6:30 PM; Wednesday: 9:00 AM – 6:30 PM; Thursday: 9:00 AM – 6:30 PM; Friday: 9:00 AM – 6:30 PM; Saturday: 8:30 AM – 2:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "Naturkost Luzernenhof",
-      "address": "Weingartenstraße 18, 79426 Buggingen, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJS_IfqN0JkUcR1NdGSjla59A",
-      "photo": "https://places.googleapis.com/v1/places/ChIJS_IfqN0JkUcR1NdGSjla59A/photos/Ab43m-ucdJ8UzyZe7vRyRI-O8-zbCWt-eUa5YjrtvEBraSsuyyWN4EYM7KAnr4vhWMUtUUXLcvuIRu9kBSMOU1N9Qo_xsObI-KHNpYU2WGWW-8RJL84hK3Hxpw3mCoafnzb2cVBdikl-81fvS8McXxisxXjbz49QhrIcBjD9BZg6_yNEuS9in9dlkeeCF8QeF2b5xrlVwqjcsh2eYY_lCCmWo3LvQGGosIUBwD9YpJ_WATMcVTc5wnfy5A-grDk54DU9VqAXzKMUlzjoGOrIYUzmF97z-h8tkKeTqgfURSbf4_JMi5H-Iro_yCP7sJuxubUXUlumJ8ZiNsbwAD1A_vffQ4liqiy6aZl4v_6LTQ0yPEctFeBfyVrtj37qiBwHaJ8FfmCoXAkSQQtJG2yUXkCQ_n8wGXKFdb7-LTMWgKDBdVqQwg/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 47.8583698,
-      "longitude": 7.642194000000001,
-      "website": "http://naturkost.luzernenhof.de/",
-      "rating": 5,
-      "opening_hours": ""
-    },
-    {
-      "name": "Gebrüder Latz Obstplantage",
-      "address": "Lebacher Str. 125, 66793 Saarwellingen, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJYwTIxdellUcRrd4s0uPXutY",
-      "photo": "https://places.googleapis.com/v1/places/ChIJYwTIxdellUcRrd4s0uPXutY/photos/Ab43m-uG4nCRchjabs05hSbn3aLsEdIUDLqzRWU9nsxnuxdDyrNqsTwYs9lxQnPTN57fooe_d_mx94_Rtxh5XOeOstlRjP5RzfecZdFfvJOy1E5fHaMs9Jt7-HhR2KEQl_7bVjRVTPJO9ciFH3YFYwYCG5FZ4PxzqtT39JZFtC8-4upJau7pDw75gHOuI4MiCQE7a4yQa_r47cMnPxdr23FhJ2OeYs4frL0eOG0gWqTe4AdXywb_PWx1EIXHzAxwMWfydywOBP46L5KDDhSc_AsGMgQlPaSrwBF1FKZqjYQg-0SQqKpU8MXdDQeVHrBoB99mjD-xZh0kdncytKu7ek7cbbgbubx5y3bvCmZtod_XIJUEcPF_KwN70fq_DwqaB2YN8jWtU6HqVE16hSx0_i-5QK3fxMD0Va7D2FWgOOVhdKsC9Q/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 49.3595634,
-      "longitude": 6.8143888,
-      "website": "https://www.latz-obstplantage.de/",
-      "rating": 3.8,
-      "opening_hours": "Monday: Closed; Tuesday: 9:00 AM – 1:30 PM; Wednesday: Closed; Thursday: 9:00 AM – 1:30 PM; Friday: 9:00 AM – 1:30 PM; Saturday: 9:00 AM – 1:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "Palatum Naturkost",
-      "address": "Am Markt 1, 77855 Achern, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJRZ6SVa3ZlkcRCx2sw62wHzg",
-      "photo": "https://places.googleapis.com/v1/places/ChIJRZ6SVa3ZlkcRCx2sw62wHzg/photos/Ab43m-svCvn1p-p6Y1mlPoPk37GdJCx_IxsdKtQkSoaRyaMgdALiPl-k99L9Bu-7du2X0bPfaUH6EDhYwtsnduM3jCda8nmTsVtoBHNumCwuaWMN8WkwIcNbovkj1f4uUu3gc8TkilII3MmxyZdyG2-jDdxw1kHQBEutYAATi7oDspwX99hod73Itb70GVliZkkBXX6_rojyTnuNI-9RlTv3CrglNz1-JU8ToXDjhDQvoe9uNQ8wykKXmN2HFhLH5nsSre_qMR0h7TNDocIp8qKZDrgjzqs7ajUHJBc4YFOe1sXMYZhWbZ76R6GpENJRgk9hzvy5T-Aia9H1SKvb4hZT9Qp0YidwPOSMr8ndeXGYNxvRnxKcr4BxEU5jk2L6xSk_9i5i5rVhwUtzeP1_TwVrtFlAIdmHOwVJiAI-zu-ZjQz9rY4/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 48.6275822,
-      "longitude": 8.071154500000002,
-      "website": "",
-      "rating": 4.7,
-      "opening_hours": ""
     },
     {
       "name": "Regionalwert Biomarkt Naturalia",
@@ -1612,18 +1564,6 @@
     },
     {
       "name": "Hieber's Frische Center KG",
-      "address": "Tulpenbaumallee 22, 79189 Bad Krozingen, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJebl06UIPkUcR3WJGNqvu2jw",
-      "photo": "https://places.googleapis.com/v1/places/ChIJebl06UIPkUcR3WJGNqvu2jw/photos/Ab43m-uBS4fTfGUkvVahkIiHQqS60qTcs4j9GjmdeEb8uelg1HcSTvy2PPJ82m57EiJsmerLkF2tA6ABuDQ9dikhs8I78q1FxXF-jsAuCMgRfIR0aceX8xUczQKStq3WgfAH59MKjIOy23MTLU1MH2-KlroF4e7ExPmC9Uaf8YoDZWM6Et46dAIFnnupjpcxtVGBW9kW8OAeJLAbYF8LRuFZSKolouTOMvhVxb4eUG3A1jfNjcW3SN8Wo0or2NWjdDChQhTY5o112P9j8JhGw6O5k41oJ_B81FNpeyCsfShtHAknSJVrQiqPLb4HOT4y5BjH7yoTSamndWVTxUCGou0pUCecapIpQQG6oCF5srrxvF80sasdJ7XaYJTajweUG3VhK0kEhzEaK9fQfXB2g_Fmon61WYagDkiHlWpC1YVT3hKr-Lo/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 47.921941399999994,
-      "longitude": 7.7096591000000005,
-      "website": "https://www.hieber.de/maerkte/hieber-bad-krozingen/",
-      "rating": 4.4,
-      "opening_hours": "Monday: 8:00 AM – 8:00 PM; Tuesday: 8:00 AM – 8:00 PM; Wednesday: 8:00 AM – 8:00 PM; Thursday: 8:00 AM – 8:00 PM; Friday: 8:00 AM – 8:00 PM; Saturday: 8:00 AM – 8:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "Hieber's Frische Center KG",
       "address": "Kanderweg 21, 79589 Binzen, Deutschland",
       "category": "Einzelhandel",
       "place_id": "ChIJLdO06_W6kUcRwKPkT5BlfnA",
@@ -2153,7 +2093,7 @@
     {
       "name": "Hieber's Frische Center KG",
       "address": "Karl-Fürstenberg-Straße 32, 79618 Rheinfelden",
-      "category": "",
+      "category": "Einzelhandel",
       "place_id": "ChIJiXWJBJO0kUcRn02TC-IUDq8",
       "photo": "https://places.googleapis.com/v1/places/ChIJiXWJBJO0kUcRn02TC-IUDq8/photos/Ab43m-sXdGCduYym6uf1j_AiHGY4-QZKbtU73Q9yDB7w21WBbrF5osZo8CoV97IC3vVJsGVW-l4aScJs1nmnAMlfXS0U_HA58_9ihqZ9wNz8mX6Ysmig9Yzj4jv3wiFgRAzFqhpHBEteBTw6qz-LWIXDn2U0OVobv0eN1fXltf9K6nu2RgpMpgDNlcu6gAd68i-zBqfx-MuqqkYcuZwmEp2QcxbHlqms5Lm72VHm8-fkbCKcDgUYHRKrk8ZdAva9zvshonUmtcKKKQhaarJBioWTHBRYgY_hdsBrNsQZRAQcicQDgDMGlsG5Rb-WZcOa-_IMreG9nEyEuvPnI53-ipEG_DEDpF1eEt8TVW8k_yXrmlDrbN2HPkbZr0gckudXn1Gm2R_xZmsHsakElzlv55RkAmOR-hkipV1LC5M6D72En85x-yxr/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
       "latitude": 47.560752799999996,
@@ -2165,7 +2105,7 @@
     {
       "name": "Hieber's Frische Center KG",
       "address": "Georg-Ühlin-Straße 1, 79650 Schopfheim",
-      "category": "",
+      "category": "Einzelhandel",
       "place_id": "ChIJby8EK5qykUcRybkOvn73Wr8",
       "photo": "https://places.googleapis.com/v1/places/ChIJby8EK5qykUcRybkOvn73Wr8/photos/Ab43m-vk2zkfgpLF-zFZ89vj1cokvQf9QFXw5yqPfqFZXqNhQEBnDWvR15WsCcnjCtwar1vDa0smjZtqXkOnN_EuhhtL8ObsZsWj5xlrrVc3FbalQh0zIbiBMZUJsbOLosmPiAPKyMDs_hzt1cYazR9nAXy1Iyq8czVP3JWOPxJ-xaLnfc1ZKMk0klSZF7FsZ3Vq7tHcFjNLEI8lSOk07VUKubUqBNId1snEjAjuz48Yv3PRwSMxBjtELO_W_LEpf-pPKuwH48lRjvBXWSaDEPR9D6ych87I3Q0PRqQRCbVE2YXUUGnLcXK8EzMLWjKqhdjjUge1VzzXDjuLy9BFd7RceP0W8KMbhRUEMtzHA9B-GC-zde52fhmtz0Y2hOzM6GjaC_FZcspIPByXS7fhs4woNkG6Ph1hsP6JIVjMRBvKFlP_iw/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
       "latitude": 47.648406900000005,
@@ -2177,7 +2117,7 @@
     {
       "name": "Hieber's Frische Center KG",
       "address": "Hauptstraße 218, 79650 Schopfheim",
-      "category": "",
+      "category": "Einzelhandel",
       "place_id": "ChIJuaWbvVmtkUcRr8Qjbce7rvo",
       "photo": "https://places.googleapis.com/v1/places/ChIJuaWbvVmtkUcRr8Qjbce7rvo/photos/Ab43m-uL6Fb96DNN-syPa58OD1_1M3yGvBVfgctJ-hoPrk7kfIfzloI3TAJkoVVGB-ezutOLWBY0c5hxT6htj3p6bG0nS-dQZVR4vSA6cowWvDbWrgbh3vI63SehY5oGgDDOhcnn8XL0492I5-AeWBwv5KyPwkjYWEd2WnfxlUZBvN7nL3AjHGLbIXlMEU6APo5embspPBPyT5UV6DLXfj-L4Ch-X9qAU5cTT7T-eSoadxHxL62hYuU-_xO-Af2xjsN4nm7I-ssPLaQA-Hb9sSk3EW3hurUw2c19Y-P1VxQlEFdocvXHsqFyp5PbPYYwlctO6s5vKeQRrZcH5Ry9okEArvCZbdoTRFaijTeFZ9ym8yoyDMTE6JmgXvETgBF6CBTBg4vbqqiQlajPr6J9wT9E5KF58-EQkv0bU1gYr03kX9k/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
       "latitude": 47.6582429,
@@ -2189,7 +2129,7 @@
     {
       "name": "Hieber's Frische Center KG",
       "address": "Hammersteiner Str., 79400 Kandern",
-      "category": "",
+      "category": "Einzelhandel",
       "place_id": "ChIJ-aoNwISlkUcR41yIBkK0BJI",
       "photo": "https://places.googleapis.com/v1/places/ChIJ-aoNwISlkUcR41yIBkK0BJI/photos/Ab43m-sKWARvuY8enVuuRovXfukZci6AWbYmJniUabUYYoxWVlDwrMTZCkKkY-XT7PTtPtBN8CKbFYuaCk1X2Y7AJAaVRsMJWDcZ1tT9_VzLvnnxx-wtlYByCWlJlcKWKGwqaYZ-UICoSX4ObrBp-b5Z2-aIk4eyZLsGRWD9QDAJLOqx4l8IMC6ACuYbRRVdRARN9N7oClRSiXGBlmcftvV62Q4nJGxupDGOH68OzoEvOLHLNCzn67Zo_L5zJKf8EmqYwyGj1qGE0EBi0bA_LTyLrxxUrRJMc0cn7Cr_a2KuSnzFLE_SaXIgPnNGxzMTCN1I8EHWoOlYy-zIsi_RQgft1KOhou0idu2Cql-yYWqJaSaSjxeDn-JQ1EvlmrIzOQ_uXEDPz4iMK-F0wksEozwNbjBYl4MKd_rhT4LLFA46tVe-BU9P/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
       "latitude": 47.7124325,
@@ -2201,7 +2141,7 @@
     {
       "name": "Hieber's Frische Center KG",
       "address": "Karl-Fürstenberg-Straße, 79379 Müllheim",
-      "category": "",
+      "category": "Einzelhandel",
       "place_id": "ChIJiXWJBJO0kUcRn02TC-IUDq8",
       "photo": "https://places.googleapis.com/v1/places/ChIJiXWJBJO0kUcRn02TC-IUDq8/photos/Ab43m-t0cFk92OATy2QduD7JpvGgMw6wSybln_tcoqvS9gimpq4YEjEtcBpiEm4U22wxr6ofoo6k-xQjYFEpGBAklY10WCQhKv537NdXxXiCvvS6RCtm7djE6LMdh6-irlH43FwpvwJqvAnRUh02mVmgrR1swJMa6aDKie4M04HZNTtycuSz6NV-XTxzkqomLEZypn_ljxvfcE1aWdL54pYJS9i1-o03plvuRRdqs61F-iAP7gbixof-y2kfPeqSGbBUTIctSwC20LDDQ-teUhGeKM2UYc0AC2m3Sv7Cdzw-P_gQmTex-bl061PvYNk1eBncTFBLyiLGJTiPgBT6fZedqLbsvdd0jy3Mfmgfw4i0miwOsTVYWONJlK2gT04ddfH_zZxW8tTYIs0GIbq1Cug68U7eV7NzxLYS1yW9dPdxVq6xuC1G/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
       "latitude": 47.560752799999996,
@@ -2213,7 +2153,7 @@
     {
       "name": "Getränkeland Hunziker GbR",
       "address": "Bürchleweg 2 79241 Ihringen",
-      "category": "",
+      "category": "Getraenkemarkt",
       "place_id": "ChIJqWbYBcUTkUcR6EdzGQIuz1E",
       "photo": "",
       "latitude": 48.03712900000001,
@@ -2221,6 +2161,66 @@
       "website": "http://www.getraenkeland-hunziker.de/",
       "rating": 4.6,
       "opening_hours": ""
+    },
+    {
+      "name": "Deuschle GmbH",
+      "address": "Huchenfelder Hauptstraße 74, 75181 Pforzheim",
+      "category": "Getraenkemarkt",
+      "place_id": "ChIJezzY33Rul0cRgslvnGxRnew",
+      "photo": "https://places.googleapis.com/v1/places/ChIJezzY33Rul0cRgslvnGxRnew/photos/Ab43m-ubh_p9jdOQcDvC2Rqe4ngd5JDDuKWqXA1TnSZSbXDCDi4Yfov6jj6cZmNB0qI161OF4qyrjcGfQyrigecdF64ltVmx40ZMbO_W8LWXjh5ri5aBTw_GkxwGTHFdjq5XQUEKVt612CLdrBhn-Ar2rSMyevmJLEBZMkFe1Quviath5j-hLSdtfVE06e8ATf-NUOsrjUiE178LXTThEKJPM8ixPfpmwX9VSno1VT5l9pHQb0UKnBHeWcpDoqZnT63cQSZkLMZYRxg0Taai9uPF9rBp5pz8a_8Uc1DeelnOrjYLXhiWiF0gb3UYrO5JWb-GvVnj18vTtBpv0HP9r5-Z3dA02nVfpbV9qOBIKvtBBEqHdGfbrTvHrZhyZ-Q3bj6z4nO1dKK_xZ2QP1TP1nlm0Qk62WcOjjjzyxJdr-rMBTAfvOhx/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 48.8533748,
+      "longitude": 8.6978747,
+      "website": "https://www.getraenke-deuschle.de/",
+      "rating": 4.8,
+      "opening_hours": "Monday: 7:30 AM – 7:00 PM; Tuesday: 7:30 AM – 7:00 PM; Wednesday: 7:30 AM – 7:00 PM; Thursday: 7:30 AM – 7:00 PM; Friday: 7:30 AM – 7:00 PM; Saturday: 7:30 AM – 6:00 PM; Sunday: Closed"
+    },
+    {
+      "name": "Vorderhaus",
+      "address": "Habsburgerstraße 9, 79104 Freiburg im Breisgau",
+      "category": "Gastro",
+      "place_id": "ChIJxwe-AqIckUcR77-0oIJwac8",
+      "photo": "https://places.googleapis.com/v1/places/ChIJxwe-AqIckUcR77-0oIJwac8/photos/Ab43m-svV-BFMmfeYCwWE2xQVH2AJIrvOEQ3ZjUWLcWRG4r61ckXpSMDAFAxbliAS3Ocbi9Zl_R_INstcc0XthAZdRPa4DCugX67keEwkNkRoOg7FYkqcJs8VpNp82ZPLzeGO0KSwDD200kiR7gPlExrooFS26Yte4M6WRjB5QHv3EMf16-TcCAMz3rYF4joC4EldGSGqut98WWAJFQkufpuZsfGhAjQ0XXDh6XxbYS9F9DiIbB1FHlnK-ERkzQa3mP9Jxvyq9kkR04jDUxCV44WdDJQ0mN_SKSp9NWfFHfWBIBfElSmFuDCvhfZ9IjW2S3z89FBwTMQlCpGpoDTawzPKnmgsdfnEkmaGqMNzDUQ2-qNrs1aHx62Qo9Q6CJXc0zACMm5LR9GnPIEQ8XbYFnBuzzjVIUv-AQrMc3lWkzWl6NNVQ/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 48.0107442,
+      "longitude": 7.855408300000001,
+      "website": "http://www.vorderhaus.de/",
+      "rating": 3.4,
+      "opening_hours": ""
+    },
+    {
+      "name": "Kloos Getränkevertrieb GmbH",
+      "address": "Gottlieb-Daimler-Straße 2-6, 77972 Mahlberg",
+      "category": "Getraenkemarkt",
+      "place_id": "ChIJuYKbh5I6kUcRcnuy6Cn2G-0",
+      "photo": "https://places.googleapis.com/v1/places/ChIJuYKbh5I6kUcRcnuy6Cn2G-0/photos/Ab43m-tzLL21IdFw4zELNajebOZBdmr-p627mfSGndZ9I_phUgD_Mi2-SEI8KogTH3lOkSpqUl7bQdKM95fQvV3JcS403eQORlKlgkLdcNSP7SGfF_4U-HEPDYyqqHdK0cMuiNtvIPdNzoRrVt9No-h0bgcd89eR5NCIbMJ20wdJZpoX_fgJZ1YrVccsmIFN5KRgUhr8C6ogqI8rkyb731zD5cRPa60FPgYg8PIWp3ylKIVP5NpatHyAxRvJCHjLvPjOY0dAMBI1RHy8zWYMgIWRLFdKnfuUL3s8q1CbOggiLu-pVZII9A7q6Q12h2q2The0hg958057Tl04SMG_-c86yk5bUvyHZyv53fgurVCBaA3dLuMm4Cdw2fDYNeUux1oorOOGHQ2wZN8CxVcb85S0nVRiGJ-wbFtBfsI3WvoDYsknXC3s/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 48.27762,
+      "longitude": 7.787649999999999,
+      "website": "http://kloos-getränke.de/",
+      "rating": 4.6,
+      "opening_hours": "Monday: 8:30 AM – 6:30 PM; Tuesday: 8:30 AM – 6:30 PM; Wednesday: 8:30 AM – 6:30 PM; Thursday: 8:30 AM – 6:30 PM; Friday: 8:30 AM – 6:30 PM; Saturday: 8:30 AM – 2:00 PM; Sunday: Closed"
+    },
+    {
+      "name": "Dorfcafé am Bach",
+      "address": "Münster 50A, 79244 Münstertal/Schwarzwald",
+      "category": "Gastro",
+      "place_id": "ChIJRRlkfJsHkUcRxD0Sil11dHk",
+      "photo": "https://places.googleapis.com/v1/places/ChIJRRlkfJsHkUcRxD0Sil11dHk/photos/Ab43m-vBqBRpwRP_9D-BaEQvFcoQgYSL7OFQs4di7Rpwd4v1Ikl1lAjow36_DYy8yeC3aTXPT72MLPSegQYl_vGmClia4Z8iBbBj_8SWDYCPD5MFkFdAHNiGhokMn8LtyaTpAci36yEHPrhMATFajSskee9X7d7NCKqDvaw9U10th3sCJZZUHHps0N_9-K80iLjeY24dWx8q9FYe2xTvYNj6rKevbHwVl0jgKmlgSN8L42W4MNqGos87CWs1AgDQWlXz89JIkX8mB1j1EbDd00EMTNKVn7NZ3sbUnHV5GdUcfYU0Fm32HYd5fSHlsPtTNGe4C3UBeEwhP5P8E_XzrKlHqfZI9JCEL_0mwCSw03PjTvlwu45D_RtZoRAfaP3bpudBu_y3etjeAtIxzKQgjBXbEhhASUd2FLq9z0emT2SZFHoo1RNIQR96wLN6devBzUDJ/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 47.8597454,
+      "longitude": 7.7969422,
+      "website": "https://www.dorfcafe-muenstertal.de/",
+      "rating": 4.8,
+      "opening_hours": "Monday: Closed; Tuesday: Closed; Wednesday: 12:00 – 5:30 PM; Thursday: 12:00 – 5:30 PM; Friday: 12:00 – 5:30 PM; Saturday: 12:00 – 5:30 PM; Sunday: 12:00 – 5:30 PM"
+    },
+    {
+      "name": "Hausbrennerei Matheis Inh. Karl Matheis",
+      "address": "Münster 55, 79244 Münstertal/Schwarzwald",
+      "category": "Getraenkemarkt",
+      "place_id": "ChIJ7UTeN9cGkUcRqwXxcN_xYVk",
+      "photo": "https://places.googleapis.com/v1/places/ChIJ7UTeN9cGkUcRqwXxcN_xYVk/photos/Ab43m-szEgH9S1qqfI0qfEzNcxGIEqVcPxNNFYTAj5x82PuyXX0kxdQxL2KbloQcQlcpPDiN2CE2Pf5pFLom4P5wY1OJ7bToRv15cZXZgikhVyk0UlIE27_o0C1b7V_DrxZ0kVws2CSyEYNO6z8HJqu8Ep9XKdIB8Szu2aFMx3nZ7i1kgP0M-DUweNotJL4cT9MBMqT9dIQLeJpKRT5mMOcLV7uaWnsWFuDaYbmdGkFnfrR-575F_kS-wf9SvLlk7rzBzawznWv4TIGcDJYubqjJbnxRJtyIriDh-3KN5w7hbiy_7-r0hK1yzttt_zWA1bwb3eZeAwQ9XPkxMIluxjSEUtSRv_7bmm7gK8d0irBSFpI9e8X4sfq6aRjhjMYRXbNW7mAOZUN8oZyFFGAdHQ_3Javru7nSHXf6uItpjpmXXN6m_Dva/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 47.8600931,
+      "longitude": 7.7960563999999986,
+      "website": "http://www.hausbrennerei-matheis.de/",
+      "rating": 4.7,
+      "opening_hours": "Monday: 9:00 AM – 12:30 PM, 2:00 – 6:00 PM; Tuesday: 9:00 AM – 12:30 PM, 2:00 – 6:00 PM; Wednesday: 9:00 AM – 12:30 PM; Thursday: 9:00 AM – 12:30 PM, 2:00 – 6:00 PM; Friday: 9:00 AM – 12:30 PM, 2:00 – 6:00 PM; Saturday: 8:30 AM – 12:30 PM; Sunday: Closed"
     }
   ]
 }

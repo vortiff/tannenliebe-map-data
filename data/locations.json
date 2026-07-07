@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-06T00:30:15.492Z",
-  "count": 185,
+  "updatedAt": "2026-07-07T09:00:51.819Z",
+  "count": 186,
   "locations": [
     {
       "name": "name",
@@ -2221,6 +2221,18 @@
       "website": "https://luisenhoehe-hotel.de/",
       "rating": 4.7,
       "opening_hours": ""
+    },
+    {
+      "name": "WÄLDER:Genuss Gastwirtschaft",
+      "address": "Feldbergstraße 5, 79868 Feldberg",
+      "category": "Gastro",
+      "place_id": "ChIJxf4Tj-j5kEcRT9Mtg1v_XhI",
+      "photo": "https://places.googleapis.com/v1/places/ChIJxf4Tj-j5kEcRT9Mtg1v_XhI/photos/AaVGc3nTqnnHF2XVo357-B_PBpi1JoybN7FM1Qvrrg-Y4xwaesORCCSlHPORsGT6qHYYHa8NsxYsGDcZDcY3ZZEU1lAkQdVU6l1NrWlalTjsw5xpMi6UvulySONkuclxxDDQr8xQ5gDJ8kX1_ZOg-tGAnv5XqQINza575sJSQXBaKwfIr5OYofr5eyJYC_74elcfUpwDYxgIC6YJxhB0j8EtMgv5wJI8lt0Nrtr1MLS2rCbys9Cy5nj8wsNXEVPe7CfdQILRtRHLQNqYweivqlYe4vg-gSVSUpFA0bA-tsVOHrIuU2YMoxM5_wko3EDa1xY9HpyB96QM7Y9kShwdNtzEyyrdNHr9Kb9EBcFWwKukJ8BpWeForeH4WNsmp3HeWYDltJo0v_rl0GdTw2RbgN8Ws983cerKUpAkz5OZK7JWM8Qu-g/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 47.8689825,
+      "longitude": 8.0953471,
+      "website": "http://www.waelder-genuss.de/",
+      "rating": 4.6,
+      "opening_hours": "Monday: 9:00 AM – 9:00 PM; Tuesday: 9:00 AM – 9:00 PM; Wednesday: 9:00 AM – 9:00 PM; Thursday: 9:00 AM – 9:00 PM; Friday: 9:00 AM – 9:00 PM; Saturday: 9:00 AM – 9:00 PM; Sunday: 9:00 AM – 9:00 PM"
     }
   ]
 }

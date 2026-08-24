@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T00:30:15.534Z",
-  "count": 187,
+  "updatedAt": "2026-08-24T09:43:36.194Z",
+  "count": 186,
   "locations": [
     {
       "name": "name",
@@ -2137,18 +2137,6 @@
       "website": "https://www.hieber.de/maerkte/hieber-rheinfelden/",
       "rating": 4.2,
       "opening_hours": "Monday: 8:00 AM – 8:00 PM; Tuesday: 8:00 AM – 8:00 PM; Wednesday: 8:00 AM – 8:00 PM; Thursday: 8:00 AM – 8:00 PM; Friday: 8:00 AM – 8:00 PM; Saturday: 8:00 AM – 8:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "Getränkeland Hunziker GbR",
-      "address": "Bürchleweg 2 79241 Ihringen",
-      "category": "Getraenkemarkt",
-      "place_id": "ChIJqWbYBcUTkUcR6EdzGQIuz1E",
-      "photo": "",
-      "latitude": 48.03712900000001,
-      "longitude": 7.640549099999999,
-      "website": "http://www.getraenkeland-hunziker.de/",
-      "rating": 4.6,
-      "opening_hours": ""
     },
     {
       "name": "Deuschle GmbH",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-28T00:30:15.386Z",
-  "count": 186,
+  "updatedAt": "2026-09-29T11:35:09.372Z",
+  "count": 185,
   "locations": [
     {
       "name": "name",
@@ -589,18 +589,6 @@
       "website": "",
       "rating": 5,
       "opening_hours": "Monday: 8:30 AM – 12:30 PM, 2:15 – 6:00 PM; Tuesday: 8:30 AM – 12:30 PM, 2:15 – 6:00 PM; Wednesday: 8:30 AM – 12:30 PM, 2:15 – 6:00 PM; Thursday: 8:30 AM – 12:30 PM, 2:15 – 6:00 PM; Friday: 8:30 AM – 12:30 PM, 2:15 – 6:00 PM; Saturday: 8:30 AM – 1:00 PM; Sunday: Closed"
-    },
-    {
-      "name": "Sesam Naturkost Marina Fies",
-      "address": "Scheuerlenstraße 32, 79822 Titisee-Neustadt, Deutschland",
-      "category": "Einzelhandel",
-      "place_id": "ChIJsf8QPyjykEcRa2hlvEHIzTo",
-      "photo": "https://places.googleapis.com/v1/places/ChIJsf8QPyjykEcRa2hlvEHIzTo/photos/Aa-ngMYQV38O16pWBm8dbPAdw5B9Oi7JVjY_ln_7kxn67b7U_9oWjZsWs_iiEQ5z3y46skNRxlHk1cHJIuhp5VgpcVROdktdoiBf9jxVZVGVFBzs5I96QyAZsx_lA0YEBWVqlb-A4XEG-haxZ61SVIHGAp2A3t3ZUEaE1O5kRDmsDJWqSVxbFmFQIpea_yTn8f-AXv6FANPshXJM-uXJEuKDxxHe17xai04JfuOZ3cg2hSo8WMxqgF8G_0pyd88zfxXgIkPTvoQ2ozpfJrB9q9vZ2GQZ7wGAKpJp9PvmDetv0UJ2yHBllmxVxEwXQ36NSjhvTdbmR2rs1FXXjpTyWc_9ilEzOBhH3jj2ChgYH7CYlOsvdsGWvAvKI2Oq-dbBg1J_Nz4rAabEXLbQ-CnoRoVsQWdbb2lh/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
-      "latitude": 47.9142765,
-      "longitude": 8.2148759,
-      "website": "https://sesam.bio/",
-      "rating": 4.8,
-      "opening_hours": "Monday: Closed; Tuesday: 8:00 AM – 6:00 PM; Wednesday: 8:00 AM – 6:00 PM; Thursday: 8:00 AM – 6:00 PM; Friday: 8:00 AM – 6:00 PM; Saturday: 8:00 AM – 1:00 PM; Sunday: Closed"
     },
     {
       "name": "Ölmühle Walz GmbH",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-26T01:30:15.294Z",
-  "count": 186,
+  "updatedAt": "2026-10-27T09:41:34.101Z",
+  "count": 187,
   "locations": [
     {
       "name": "name",
@@ -2233,6 +2233,18 @@
       "website": "https://www.cliner-quelle.de/",
       "rating": 4.4,
       "opening_hours": "Monday: 10:00 AM – 8:00 PM; Tuesday: 10:00 AM – 8:00 PM; Wednesday: 10:00 AM – 8:00 PM; Thursday: 10:00 AM – 8:00 PM; Friday: 10:00 AM – 8:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: 10:00 AM – 5:00 PM"
+    },
+    {
+      "name": "Gasthaus Engel",
+      "address": "Sägendobel 18, 79271 St. Peter",
+      "category": "Gastro",
+      "place_id": "",
+      "photo": "",
+      "latitude": "",
+      "longitude": "",
+      "website": "",
+      "rating": "",
+      "opening_hours": ""
     }
   ]
 }

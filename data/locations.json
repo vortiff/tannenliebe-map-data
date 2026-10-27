@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T09:41:34.101Z",
+  "updatedAt": "2026-10-27T09:42:01.763Z",
   "count": 187,
   "locations": [
     {
@@ -2238,13 +2238,13 @@
       "name": "Gasthaus Engel",
       "address": "Sägendobel 18, 79271 St. Peter",
       "category": "Gastro",
-      "place_id": "",
-      "photo": "",
-      "latitude": "",
-      "longitude": "",
-      "website": "",
-      "rating": "",
-      "opening_hours": ""
+      "place_id": "ChIJE6GpYZNXn0cRe692pnN8XWg",
+      "photo": "https://places.googleapis.com/v1/places/ChIJE6GpYZNXn0cRe692pnN8XWg/photos/AV-0GLc0e23bEqNFFCA2tynQ1lfbF1-P6G2Ul3vlQkoMeVwPzPT3qS-npkLqVy_agBnHUyoh2SxnwHpvj91M3u2h6tUVyL8TXquwh44oQCfSdl2iwSjXZmEQRjCQxsMOGEKF_pw_nLH7WbKXgKHHmLm1Vmp5VFJ94Mid7uhUw14M8YGwuRzo-jAbqquVydadm4k4M3pZuvCHrTMkNr4cCwgkB2XXL6uJb2oqAMl7tabyH6Xd4FIgUC95fct5Ks9sN2Fi2rZZZVUI4teB7plw6oB3J34PcfAStR_6GD1IauoG2hvr_5xaU4vyk89Sv-ivOdaSV_40bSqUX4Tr1U5HN1qO7uWmbKjJTlT4q18EuBppREvYHa5bjdBw3IN0Pf3U5HEaA5CrYQFunhFu5fz3U-DT3xfFZgfe/media?maxWidthPx=800&key=AIzaSyCRMx8boch04HgG-Lyf4DpB-99dwCOwEJo",
+      "latitude": 49.462979999999995,
+      "longitude": 11.10155,
+      "website": "https://engel-gasthaus.de/",
+      "rating": 4.7,
+      "opening_hours": "Monday: 6:00 PM – 12:00 AM; Tuesday: 6:00 PM – 12:00 AM; Wednesday: 6:00 PM – 12:00 AM; Thursday: 6:00 PM – 12:00 AM; Friday: 6:00 PM – 12:00 AM; Saturday: 6:00 PM – 12:00 AM; Sunday: 5:00 – 11:00 PM"
     }
   ]
 }
